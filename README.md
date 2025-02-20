@@ -19,3 +19,5 @@
     schemaTypes/painting.ts
     schemaTypes/artist.ts
 12. update schemaTypes/index.ts
+
+13. pnpm create next-app client --ts --tailwind （create frontend folder）
