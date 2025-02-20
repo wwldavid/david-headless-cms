@@ -6,8 +6,16 @@
 5. mkdir sanity && cd sanity (under the david-headless-cms/ directory)
 6. pnpm create sanity@latest
    （Select "Create a new project" --> Select dataset (production) --> Select default output path (sanity)）
+   （or this is the second time I use sanity studio, I use the former dataset, then I
+   Select the existing project name --> Select dataset (production) --> Select default output path (sanity)）
+   \*important: use the former dataset's projectId in sanity.config.ts,otherwise, cannot see the former data.
 7. pnpm install (install sanity dependencies)
 8. npm run dev (or: npx sanity dev) (this command is for development)
 9. cd /Users/wanlongwu/Desktop/david-headless-cms/sanity/david-wanlong-gallery
 10. pnpm dev
     http://localhost:3333/
+
+11. create painting and artist schema
+    schemaTypes/painting.ts
+    schemaTypes/artist.ts
+12. update schemaTypes/index.ts
