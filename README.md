@@ -27,3 +27,8 @@
 -- Creating the Frontend Application with Next.js, TypeScript, and Tailwind CSS
 
 13. pnpm create next-app client --ts --tailwind （create frontend folder）
+
+14. cd client
+15. pnpm add @sanity/client
+16. client/src/lib/sanity.js
+    configure Sanity Client
