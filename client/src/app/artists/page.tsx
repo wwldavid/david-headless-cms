@@ -51,7 +51,7 @@ export default function ArtistsPage(){
       }
       }
     `)
-    .then((data) =>{
+    .then((data: Artist[]) =>{
       console.log("Fetched artists:", data);
       setArtists(data);
       if(data.length > 0) {
