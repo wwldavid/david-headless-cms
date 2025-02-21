@@ -49,7 +49,7 @@ export default function PaintingsPage() {
        }
        }
     `, {genre:selectedGenre})
-    .then((data) => {
+    .then((data:Painting[]) => {
       console.log("Fetched paintings:", data);
       setPaintings(data);
     })
