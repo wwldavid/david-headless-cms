@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { sanityClient } from "../../lib/sanity.js";
-import ArtistList from "@/components/ArtistList";
-import ArtistInfo from "@/components/ArtistInfo";
+import ArtistList from "../../components/ArtistList";
+import ArtistInfo from "../../components/ArtistInfo";
 
 interface Artist {
   _id: string;

@@ -36,3 +36,14 @@
     configure Sanity Client
 
 --
+
+17. pnpm setup
+18. pnpm add -g vercel  
+    （ Install the Vercel CLI globally in the root directory (david-headless-cms/) ）
+19. cd client
+20. vercel login
+21. vercel
+
+--
+
+22. .env.local (create .env.local file in the root directory)

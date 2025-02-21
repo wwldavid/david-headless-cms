@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import GenereFilter from "@/components/GenereFilter";
-import PaintingGrid from "@/components/PaintingGrid";
+import GenereFilter from "../../components/GenereFilter";
+import PaintingGrid from "../../components/PaintingGrid";
 import { sanityClient } from "../../lib/sanity.js";
 
 
