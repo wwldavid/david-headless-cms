@@ -35,7 +35,7 @@
 16. client/src/lib/sanity.js
     configure Sanity Client
 
---
+-- Deploy the front-end project to Vercel
 
 17. pnpm setup
 18. pnpm add -g vercel  
@@ -46,4 +46,21 @@
 
 --
 
-22. .env.local (create .env.local file in the root directory)
+22. .env.local (create .env.local file in the client directory)
+23. sanity login (use GitHub account to make sure in the oa8t0gh6 project).
+    --> Settings --> API --> CORS Origins --> Add a Vercel domain (https://client-five-drab.vercel.app)
+
+-- Edit database data in Sanity Studio
+
+24. pnpm add concurrently --save-dev （install concurrently）
+    david-headless-cms>package.json (modifying script configuration)
+    "dev": "concurrently \"next dev\" \"sanity dev\""
+25. cd sanity --> pnpm run dev
+    (Sanity Studio using vite@6.1.1 ready in 2372ms and running at http://localhost:3333/)
+
+    \*\*\* if not "cd sanity", run "pnpm run dev" in root directory (start Next.js and Sanity Studio simultaneously), open http://localhost:3333 error message will appear like this"An error occurred that Sanity Studio was unable to recover from.
+    [object Object]
+    Could not resolve configuration file:
+
+    - No sanity.config.ts file found
+    - No sanity.config.js file found"
